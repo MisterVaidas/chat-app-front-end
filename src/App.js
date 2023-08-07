@@ -1,8 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Nav } from "react-bootstrap";
-import Header from "./Components/Header";
-// import Home from "./Components/Home/Home";
+import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Chat from "./Components/Chat/MainChat";
 import {
@@ -17,15 +16,14 @@ class App extends React.Component {
     return (
 
     <Router>
-          <Header />
           <Nav>
-            {/* <Link to="/">Home</Link> */}
+            <Link to="/">Home</Link>
             <Link to="About">About</Link>
             <Link to="Chat">Chat</Link>
           </Nav>
 
           <Routes>
-            {/* <Route index element={<Home />} /> */}
+            <Route path="/home" index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/chat" element={<Chat />} />
           </Routes>
