@@ -5,16 +5,19 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Chat from "./Components/Chat/MainChat";
 import Contact from "./Components/Contact/Contact";
-import Logout from "./Components/Model/LogoutModal";
+// import LogoutModal from "./Components/Modal/LogoutModal";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Link
 } from "react-router-dom";
+import Register from "./Components/Modal/RegisterModal";
+// import Modal from 'react-modal';
 
 
 class App extends React.Component {
+
   render() {
     return (
 
@@ -25,7 +28,7 @@ class App extends React.Component {
             <Link to="About">About</Link>
             <Link to="Chat">Chat</Link>
             <Link to="Contact">Contact</Link>
-            <Link to="Logout">Logout</Link>
+            {/* <Link to="Logout">Logout</Link> */}
           </Nav>
       
 
@@ -33,8 +36,9 @@ class App extends React.Component {
             <Route path="/" index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/Modal/RegisterModal" element={<Register />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/logout" element={<Logout />} />
+            {/* <Route path="/logout" element={<LogoutModal />} /> */}
           </Routes>
       
         </Router>
