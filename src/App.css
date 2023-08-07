@@ -1,4 +1,42 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 80%;
 }
 
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://media.istockphoto.com/id/1435226158/photo/circuit-board-background-computer-data-technology-artificial-intelligence.webp?b=1&s=170667a&w=0&k=20&c=d-gHg6uCV5JEaKJCpxhJ01Ab19m032daRC8vDo8NzDI=);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.Welcome {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://elearningindustry.com/wp-content/uploads/2018/03/educational-chatbots-and-the-use-of-instant-messaging-apps-in-the-classroom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+h1,
+h2 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 5px 5px 8px black;
+}
+p {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(240, 248, 255, 0.651);
+}
+
+ul {
+  background-color: rgba(240, 248, 255, 0.651);
+  border-radius: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
