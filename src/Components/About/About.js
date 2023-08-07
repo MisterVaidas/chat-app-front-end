@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Chat extends Component {
+class About extends Component {
     render() {
       return (
         <div>Hello!</div>
@@ -8,4 +8,4 @@ class Chat extends Component {
   }
 }
 
-export default Chat;
+export default About;
