@@ -8,7 +8,7 @@ export default function Home() {
         <h3>Chat</h3>
         <p>
           Quacker is a streamlined instant messaging application tailored for
-          developers seeking real-time communication and code collaboration.
+          developers seeking real-time communication and code collaboration!
         </p>
         <img
           src="https://www.callcentrehelper.com/images/stories/2021/08/instant-messaging-strategy-121593822-760.jpg"
