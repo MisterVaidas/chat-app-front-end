@@ -8,7 +8,7 @@ export default function Home() {
         <h3>Chat</h3>
         <p>
           Quacker is a streamlined instant messaging application tailored for
-          developers seeking real-time communication and code collaboration!
+          developers seeking real-time communication and code collaboration.
         </p>
         <img
           src="https://www.callcentrehelper.com/images/stories/2021/08/instant-messaging-strategy-121593822-760.jpg"
@@ -30,6 +30,29 @@ export default function Home() {
           hurdles. Quacker revolutionizes the way developers interact and work
           together, enhancing productivity and fostering a vibrant coding
           community."
+        </p>
+
+        <h2> Why Choose Quacker?</h2>
+        <p>
+          Quacker transforms the way developers collaborate by combining instant
+          messaging with dynamic code editing. Whether you're a remote team, a
+          pair programming duo, or a freelancer working with clients, Quacker
+          streamlines your workflow, reduces communication barriers, and
+          accelerates project development.
+        </p>
+        <p>
+          Join the growing community of developers who have embraced Quacker as
+          their go-to platform for seamless code collaboration. Elevate your
+          coding experience and make your mark in the world of collaborative
+          software development.
+        </p>
+
+        <h2>Get Started</h2>
+        <p>
+          Ready to revolutionize your code collaboration experience? Sign up for
+          Quacker today and start chatting, coding, and creating like never
+          before. Your journey towards more efficient and enjoyable code
+          collaboration starts right here.
         </p>
       </div>
     </main>

@@ -1,5 +1,12 @@
-import React from "react";
+import { Component } from "react";
+import LoginModal from "../Modal/LoginModal"
 
-export default function MainChat() {
-  return <div>MainChat</div>;
+class Chat extends Component {
+    render() {
+      return (
+        <LoginModal />
+    )
+  }
 }
+
+export default Chat;
