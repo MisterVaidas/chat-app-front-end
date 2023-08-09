@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import axios from "axios";
+import Register from './RegisterModal';
 
 const Login = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isRegisterVisible, setRegisterVisible] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -21,13 +23,18 @@ const Login = (props) => {
       });
 
       if (response.data.success) {
-        History.push('./Home/Home.js');
+        // Use props.history.push instead of History.push
+        props.history.push('./Home/Home.js');
       } else {
         setError(response.data.message || 'Failed to login.');
       }
     } catch (err) {
       setError(err.message || 'An error occurred while logging in.');
     }
+  };
+
+  const toggleRegisterVisibility = () => {
+    setRegisterVisible(!isRegisterVisible);
   };
 
   return (
@@ -56,7 +63,8 @@ const Login = (props) => {
         <button type="submit">Login</button>
       </form>
       <div>
-        Don't have an account? <a href= "/RegisterModal">Register!</a>
+        Don't have an account? <button onClick={toggleRegisterVisibility}>Register!</button>
+        {isRegisterVisible && <Register />}
       </div>
     </div>
   );

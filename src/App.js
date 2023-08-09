@@ -4,8 +4,13 @@ import { Nav } from "react-bootstrap";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Chat from "./Components/Chat/MainChat";
+
+import Register from "./Components/Modal/RegisterModal";
+import Contact from "./Components/Contact/Contact";
+
 import Contact from "./Components/Contact/Contact";
 import Register from "./Components/Modal/RegisterModal";
+
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 class App extends React.Component {
